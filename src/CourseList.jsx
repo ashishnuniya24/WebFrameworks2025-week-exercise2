@@ -1,12 +1,12 @@
-import React from 'react';
-import Course from './Course';
+import React from "react";
+import Course from "./Course";
 
 const CourseList = ({ courses }) => {
   return (
-    <div className="course-list">
-      {courses.map((course, index) => (
+    <div>
+      {courses.map((course) => (
         <Course
-          key={index}
+          key={course.courseId}
           name={course.name}
           courseId={course.courseId}
           studentPositions={course.studentPositions}

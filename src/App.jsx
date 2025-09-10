@@ -1,9 +1,9 @@
-import React from 'react';
-import CourseList from './CourseList';
+import React from "react";
+import CourseList from "./CourseList";
 
-const App = ({ courses }) => {
+const App = ({ courses = [] }) => {
   return (
-    <div className="app">
+    <div>
       <CourseList courses={courses} />
     </div>
   );
